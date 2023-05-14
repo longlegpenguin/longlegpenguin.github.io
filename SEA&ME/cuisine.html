@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CUISINE-SEA&ME</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/base.css" media="screen">
+  <link href="css/normal.css" rel="stylesheet" type="text/css" media="screen">
+  <link rel="stylesheet" href="./styles/print.css" media="print">
+</head>
+
+<body>
+  <div class="container-lg">
+    <header id="header">
+      <nav>
+        <h2 class="visually-hidden">Jump to content</h2>
+        <a class="visually-hidden-focusable" href="#content">Jump to content</a>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-hh navbar-fixed">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="./src/image/logo.PNG" width="24" height="24" alt="logo"
+                    class="d-inline-block align-text-top rounded-circle">
+                SEA&ME
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" id="about" aria-current="page">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cuisine.html" class="nav-link active" id="cuisine" aria-current="page">CUISINE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="reservation.html" class="nav-link" id="reservation">RESERVATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link" id="contact">CONTACT</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                  <button class="btn btn-outline-light" id="activate-high-contrast" type="button">LARGE CONTRAST MODE</button>
+                  <button class="btn btn-outline-light" id="activate-normal" type="button">NORMAL MODE</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+      <h1>Cuisine</h1>
+      <hr>
+      <aside>
+        <p class="text-muted">Home><a href="./cuisine.html">Cuisine</a></p>
+      </aside>
+    </header>
+
+    <main class="row m-1" id="content">
+      <section id="menu">
+        <h2>Menu</h2>
+        <div class="d-flex align-items-start">
+          <div class="nav flex-column nav-pills me-3 sticky-top" id="v-pills-tab" role="tablist"
+            aria-orientation="vertical">
+            <button class="nav-link active" id="v-pills-soupbase-tab" data-bs-toggle="pill"
+              data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+              aria-selected="true">SOUPBASE</button>
+            <button class="nav-link" id="v-pills-seafood-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+              type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">SEAFOOD</button>
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+              type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">MEAT</button>
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
+              type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">VEGETABLES</button>
+          </div>
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+              aria-labelledby="v-pills-soupbase-tab">
+              <div id="soupBase">
+                <!-- <h3>SOUPBASE</h3> -->
+                <table class="table">
+                  <caption>
+                    soup bases
+                    <details>
+                      <summary>Why soup base?</summary>
+                      <p>Different soup base will result a different flavour of the food. Always choose your favourite
+                        base
+                        and boil dishes in it!</p>
+                    </details>
+                  </caption>
+                  <thead class="table-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Dish</th>
+                      <th scope="col">Price(ft/db)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>
+                        <strong>SEA&ME Under the Sea Soup Base</strong>
+                        <p class="text-muted">
+                          Selected crabs, shrimps soup package boiled by slow heat.
+                        </p>
+                      </td>
+                      <td>HUF 999</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>
+                        <strong>Tomato Soup Base</strong>
+                        <p class="text-muted">
+                          Selected tomatoes that have enjoyed abundant sunshine are made into sauce. The sauce is then
+                          fried
+                          to make the tomato soup base.
+                        </p>
+                        <details class="text-muted">
+                          <summary>Recommendation</summary>
+                          It is recommended with fresh fishes.
+                        </details>
+                      </td>
+                      <td>HUF 899</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>
+                        <strong>Super Spicy Soup Base</strong>
+                        <p class="text-muted">
+                          Selected Sichuan pepper, pepper and spices raw materials are served to make real Sichuan hot
+                          pot
+                          with process of traditional watercress fermentation. It is featured by bright red colour soup
+                          base
+                          with
+                          spicy and rich flavour.
+                        </p>
+                        <details class="text-muted">
+                          <summary>Recommendation</summary>
+                          It is recommended for boiling crispy and chewy animal ingredients.
+                          Three Delicacies Soup Base
+                          Modern craft is adopted to extract meat concentrated bone soup. Different condiments can be
+                          matched
+                          according to own preference. It tastes better with sesame sauce. It is recommended for boiling
+                          seafoods
+                          and vegetables.
+                        </details>
+                      </td>
+                      <td>HUF 799</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>
+                        <strong>Three Delicacies Soup Base</strong>
+                        <p class="text-muted">
+                          Modern craft is adopted to extract meat concentrated bone soup. Different condiments can be
+                          matched
+                          according to own preference. It tastes better with sesame sauce.
+                        </p>
+                        <details class="text-muted">
+                          <summary>Recommendation</summary>
+                          It is recommended for boiling seafoods and vegetables.
+                        </details>
+                      </td>
+                      <td>HUF 799</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="backToTop"><a href="#header">Back to Top</a></div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-seafood-tab">
+              <div id="seaFood">
+                <!-- <h3>SEAFOOD</h3> -->
+                <table class="table">
+                  <caption>
+                    seafood
+                  </caption>
+                  <thead class="table-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Dish</th>
+                      <th scope="col">Price(FT/100g)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>
+                        <strong>SEA&ME Boneless Basa Fish Slice</strong>
+                        <p class="text-muted">
+                          Selected Basha fish cultured in the Mekong River Basin of Vietnam is served in this dish
+                        </p>
+                      </td>
+                      <td>HUF 999</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>
+                        <strong>SEA&ME Tilapia</strong>
+                        <p class="text-muted">
+                          selected high-protein, low-cholesterol, low-fat, artificially-fed freshwater fish containing a
+                          variety of unsaturated fatty acids is served in this dish.
+                        </p>
+                      </td>
+                      <td>HUF 999</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>
+                        <strong>SEA&ME Squid Tentacles</strong>
+                        <p class="text-muted">
+                          Selected heads of fresh purple squid and Argentine short-fin squid are served in this dish.
+                        </p>
+                      </td>
+                      <td>HUF 899</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>
+                        <strong>SEA&ME Thailand Black-Tiger Shrimp</strong>
+                        <p class="text-muted">
+                          Only those selected live Black Tiger Shrimps cultured in pure seawater of Thailand.
+                        </p>
+                      </td>
+                      <td>HUF 999</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>
+                        <strong>Crab Sticks</strong>
+                        <p class="text-muted">
+                          3db
+                        </p>
+                      </td>
+                      <td>HUF 399</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">6</th>
+                      <td>
+                        <strong>Shrimp Slip</strong>
+                      </td>
+                      <td>HUF 999</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="backToTop"><a href="#header">Back to Top</a></div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+              <div id="meat">
+                <!-- <h3>MEAT</h3> -->
+                <table class="table">
+                  <caption>
+                    meat
+                  </caption>
+                  <thead class="table-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Dish</th>
+                      <th scope="col">Price(FT/100g)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>
+                        <strong>Fatty Beef Slice</strong>
+                        <p class="text-muted">
+                          It is made of chuck steaks in the 1-6 ribs on selected cattle that have been imported and
+                          naturally
+                          fed for more than 100 days with grain. Each cattle only carry 20 kg of them. After procedures
+                          of
+                          ageing, dividing into natural blocks and slicing into thin slices, the taste becomes more
+                          delicate
+                          and smoother.
+                        </p>
+                      </td>
+                      <td>HUF 1699</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>
+                        <strong>Spicy Marinated Beef</strong>
+                        <p class="text-muted">
+                          It is made of topside and oyster blade, which are the tenderest parts of cattle' hind legs and
+                          fore
+                          legs. The shape is like a cucumber, commonly known as cucumber strip. After 9 complicated
+                          procedures
+                          such as defrosting, tearing fascia, dividing, slicing and marinating, the taste becomes smooth
+                          and
+                          tender but not tough, which makes it the most popular dish in Haidilao.
+                        </p>
+                      </td>
+                      <td>HUF 1699</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>
+                        <strong>Hot Pot Steak</strong>
+                        <p class="text-muted">
+                          It is made of tender meat in the centre of chuck steak, which is called top blade steak or
+                          oyster
+                          blade. Each cattle only have 3 kilograms of them. After several complicated procedures such as
+                          defrosting, tearing fascia, dividing, slicing and marinating, the taste becomes tender and
+                          chewy
+                          with a meaty flavour.
+                        </p>
+                      </td>
+                      <td>HUF 1699</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>
+                        <strong>Juicy Beef Meatball</strong>
+                        <p class="text-muted">
+                          It is made of beef rumps in cattle' hind legs, treated with procedures of aging, smashing,
+                          whipping
+                          into smashed beef pastes, kneading into meatballs and wrapping soup jelly which is made from
+                          old
+                          chicken and ham. After the soup boils and meatball floats, cook for about 3 minutes and serve.
+                          When
+                          eating with dipping sauce for fish ball and shrimp paste, it presents us a more prominent
+                          flavour.
+                          The temperature of juicy beef meatballs' central soup is high, be careful when eat them.
+                          <br>3db
+                        </p>
+                      </td>
+                      <td>HUF 999</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>
+                        <strong>Grass Fed Lamb Slice</strong>
+                        <p class="text-muted">
+                          It is made of lambs of no more than 12 months old which are from Xilingol, Hulunbeir and other
+                          grasslands of Inner Mongolia. After procedures of aging, slitting and freezing, the taste
+                          becomes
+                          tender and juicy, without the smell of mutton. After the soup boils, cook for about 30 seconds
+                          and
+                          serve.
+                        </p>
+                      </td>
+                      <td>HUF 2999</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">6</th>
+                      <td>
+                        <strong>Beef Tripe</strong>
+                        <p class="text-muted">
+                          It is made of beef tripes, treated with procedures of washing, tearing into small pieces,
+                          slitting,
+                          and mixture with papain. After the soup boils, cook for 15 seconds (dip 8 times and take out 7
+                          times) and serve. It tastes crispy and tender.
+                        </p>
+                      </td>
+                      <td>HUF 1299</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">7</th>
+                      <td>
+                        <strong>Quail Egg</strong>
+                        <p class="text-muted">
+                          Carefully selected, the shiny quail eggs taste smooth, delicate and mellow.
+                        </p>
+                      </td>
+                      <td>HUF 899</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="backToTop"><a href="#header">Back to Top</a></div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+              <div id="vegetables">
+                <!-- <h3>VEGETABLES</h3> -->
+                <table class="table">
+                  <caption>
+                    vegetables
+                  </caption>
+                  <thead class="table-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Dish</th>
+                      <th scope="col">Price(FT/50g)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>
+                        <strong>Baby Chinese Cabbage</strong>
+                        <p class="text-muted">
+                          This dish is made of fresh baby Chinese cabbage, a must-have for hot pot, from Shandong,
+                          Yunnan,
+                          Hebei and other provinces. It is selected, cleaned, cut, and well-placed. Cook for about 2
+                          minutes
+                          after the soup boils.
+                        </p>
+                      </td>
+                      <td>HUF 599</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>
+                        <strong>Spinach</strong>
+                        <p class="text-muted">
+                          This dish is made of fresh spinach from Yunnan, Hebei, Jiangsu and other provinces. It is
+                          selected,
+                          cleaned, cut, and well-placed. Cook for about 1 minute after the soup boils.
+                        </p>
+                      </td>
+                      <td>HUF 699</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>
+                        <strong>Coriander</strong>
+                        <p class="text-muted">
+                          This dish is made of fresh coriander with special flavour from Shandong, Yunnan, Hebei,
+                          Jiangsu and
+                          other provinces. Cook for about 2-3 minutes after the soup boils.
+                        </p>
+                      </td>
+                      <td>HUF 699</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="backToTop"><a href="#header">Back to Top</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="row" id="gallery">
+        <h2>Gallery</h2>
+        <div class="col-sm-3">
+          <a href="./src/image/babysquid.png" target="_blank"><img class="img-fluid img-thumbnail"
+              src="./src/image/babysquidthumb.png" alt="Baby Squid"></a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./src/image/lambslice.png" target="_blank"><img class="img-fluid img-thumbnail"
+              src="./src/image/lambslicethumb.png" alt="Lamb Slice"></a>
+        </div>
+      </section>
+      <div class="backToTop"><a href="#header">Back to Top</a></div>
+    </main>
+    <footer class="row border-top py-5 my-5">
+      <aside class="col-xl-2 col-md-6 text-muted">
+          <strong>Links</strong>
+          <ul class="nav flex-column mt-0">
+              <li class="nav-item mb-2"><a href="./index.html">About</a></li>
+              <li class="nav-item mb-2"><a href="./cuisine.html">Cuisine</a></li>
+              <li class="nav-item mb-2"><a href="./reservation.html">Reservation</a></li>
+              <li class="nav-item mb-2"><a href="./contact.html">Contact</a></li>
+          </ul>
+      </aside>
+      <aside class="col-xl-4 col-md-6 text-muted">
+          <strong>External Links</strong>
+          <ul class="nav flex-column mt-0">
+              <li class="nav-item mb-2"><a target="_blank" href="https://m.facebook.com">Facebook</a></li>
+              <li class="nav-item mb-2"><a target="_blank"
+                      href="https://www.instagram.com/longlegpenguin">Instagram</a></li>
+              <li class="nav-item mb-2"><a target="_blank"
+                      href="https://www.youtube.com/watch?v=dT0MKcaQSSs">YouTube</a></li>
+          </ul>
+      </aside>
+      <address class="col-xl-6 text-muted">
+          <strong>SEA&ME</strong>
+          <p>7th Floor, No.1 building, Yard No.398, Zhongdong Rd, Dongxiaokou Town, Chang
+              Ping District, Beijing</p>
+          <p>Copyright ⓒ 2021. SEAME INC. All Rights Reserved</p>
+      </address>
+  </footer>
+
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="./css/css-switch.js"></script>
+
+</body>
+
+</html>

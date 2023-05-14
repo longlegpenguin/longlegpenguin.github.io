@@ -1,0 +1,14 @@
+@import url('base.css');
+
+nav, img, video, button, .carousel, article#feature ul, .shortClicks, .backToTop, footer aside {
+    display: none;
+}
+
+body, main article {
+    margin: 0px;
+}
+
+#introduction article {
+    padding: 0;
+    margin: 0;
+}

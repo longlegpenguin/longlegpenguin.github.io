@@ -1,0 +1,98 @@
+/*** ABOUT ***/
+#features, .card-group section, #introduction article div {
+    display: block;
+    width: auto;
+}
+
+.card {
+    background-color: rgb(255,255,255,0.1);
+}
+
+@media screen and (min-width:960px) {
+    .card-group  {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ** CUISINE ** */
+.table {
+    color: #fff;
+}
+.table th, .table tr, .table td, .table caption{
+    /* color:lightgrey; */
+    color: white !important;
+}
+.text-muted {
+    color: lightgray !important;
+}
+
+/*** RESERVATION ***/
+form {
+    background-color: black;
+}
+fieldset {
+	border-radius: 5px;
+	min-width: 450px;
+	background-color: rgb(255,255,255,0.1);
+	margin-bottom: 10px;
+    padding: 10px;
+}
+/** GENERAL **/
+body {
+    background: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+    font-size: 2em;
+}
+
+em {
+    color: rgb(15, 195, 123);
+    font-weight: bolder;
+}
+
+.btn {
+    font-size: 1.1em;
+    background-color: whitesmoke;
+    color: #000;
+}
+
+a {
+  color: rgb(202, 202, 24);
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px rgb(202, 202, 24) solid;
+  padding-bottom: 2px;
+}
+   
+a:visited {
+  background: #fff;
+  color: yellow;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px yellow solid;
+  padding-bottom: 2px;
+}
+   
+a:hover {
+  background: rgb(53, 53, 12);
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px yellow solid;
+  padding-bottom: 2px;
+}
+
+address, address p, footer address strong, footer aside strong {
+    color:lightgrey;
+}
+
+#activate-high-contrast {
+    display: none;
+}
+  

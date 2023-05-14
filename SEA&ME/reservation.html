@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVATION-SEA&ME</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/base.css" media="screen">
+    <link href="css/normal.css" rel="stylesheet" type="text/css" media="screen">
+    <link rel="stylesheet" href="./styles/print.css" media="print">
+
+</head>
+
+<body>
+    <div class="container-lg">
+    <header id="header">
+        <nav>
+            <h2 class="visually-hidden">Jump to content</h2>
+            <a class="visually-hidden-focusable" href="#content">Jump to content</a>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-hh navbar-fixed">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">
+                    <img src="./src/image/logo.PNG" width="24" height="24" alt="logo"
+                        class="d-inline-block align-text-top rounded-circle">
+                    SEA&ME
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link" id="about" aria-current="page">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cuisine.html" class="nav-link" id="cuisine" aria-current="page">CUISINE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="reservation.html" class="nav-link active" id="reservation">RESERVATION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link" id="contact">CONTACT</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-light" id="activate-high-contrast" type="button">LARGE CONTRAST MODE</button>
+                        <button class="btn btn-outline-light" id="activate-normal" type="button">NORMAL MODE</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <h1>Reservation</h1>
+        <hr>
+        <aside>
+            <p class="text-muted">Home><a href="./reservation.html">Reservation</a></p>
+        </aside>
+    </header>
+
+    <main class="row m-1" id="content">
+        <section class="row">
+            <h2>Instruction</h2>
+            <p>Fill in the following form to reserve a seat! You can book <em>one week</em> in advance.</p>
+            <h2>Form</h2>
+            <form action="mailto:jbpr3n@inf.elte.hu" method="post" enctype="text/plain">
+                <fieldset id="basics">
+                    <legend>Basic Information</legend>
+                    <label for="customerName">
+                        <strong>Name</strong>
+                    </label>
+                    <input type="text" name="customerName" id="customerName" size="30" maxlength="30" required> <br>
+                    <label for="email">
+                        <strong>Email</strong>
+                    </label>
+                    <input type="text" name="email" id="email" size="30" maxlength="30" required>
+                </fieldset>
+                <fieldset id="time">
+                    <legend>Date Selection</legend>
+                    <div class="formBlock row">
+                        <strong>Please Select A Day</strong>
+                        <div class="col-xl-3 col-md-4 col-sm-6">
+                            <input type="radio" name="Day" id="mon" value="MON" required>
+                            <label for="mon">Monday</label>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-6">
+                            <input type="radio" name="Day" id="tue" value="TUE">
+                            <label for="tue">Tuesday</label>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-6">
+                            <input type="radio" name="Day" id="wed" value="WED">
+                            <label for="wed">Wednesday</label>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-6">
+                            <input type="radio" name="Day" id="thu" value="THU">
+                            <label for="thu">Thursday</label>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-6">
+                            <input type="radio" name="Day" id="fri" value="FRI">
+                            <label for="fri">Friday</label>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-6">
+                            <input type="radio" name="Day" id="sat" value="SAT">
+                            <label for="sat">Saturday</label>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-6">
+                            <input type="radio" name="Day" id="sun" value="SUN">
+                            <label for="sun">Sunday</label>
+                        </div>
+                    </div>
+                    <div class="formBlock row">
+                        <strong>Please Select A Time</strong>
+                        <div class="col-xl-3 col-md-4 col-sm-6">
+                            <input type="radio" name="Time" id="am" value="AM" required>
+                            <label for="am">A.M.(9:00-11:59)</label>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-6">
+                            <input type="radio" name="Time" id="pm" value="PM">
+                            <label for="pm">P.M.(12:00-21:59)</label>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-6">
+                            <input type="radio" name="Time" id="midnight" value="Midnight">
+                            <label for="midnight">Midnight(22:00-03:00)</label>
+                        </div>
+                    </div>
+                    <div class="formBlock row">
+                        <label for="addition">
+                            <strong>Please Enter Below Anything You Want to Add (e.g., Special menu)</strong>
+                        </label>
+                        <textarea name="addition" id="addition" cols="50" rows="5"
+                            placeholder="I am vegeterian."></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" name="newsletter" id="newsletterid" value="yes" checked>
+                    <label for="newsletterid">I'd like to subscribe to the newsletter</label>
+                    <br>
+                    <input type="checkbox" name="privacy" id="privacy" value="yes" required>
+                    <label for="privacy">I agree to the privacy policy.</label>
+                </fieldset>
+                <fieldset>
+                    <div class="row">
+                        <div class="col-lg-3 col-6"><input class="btn btn-primary m-2" type="submit" value="Submit">
+                        </div>
+                        <div class="col-lg-3 col-6"><input class="btn btn-danger m-2" type="reset" value="Reset"></div>
+                        </div>
+                </fieldset>
+            </form>
+        </section>
+        <div class="backToTop"><a href="#header">Back to Top</a></div>
+    </main>
+
+    <footer class="row border-top py-5 my-5">
+        <aside class="col-xl-2 col-md-6 text-muted">
+            <strong>Links</strong>
+            <ul class="nav flex-column mt-0">
+                <li class="nav-item mb-2"><a href="./index.html">About</a></li>
+                <li class="nav-item mb-2"><a href="./cuisine.html">Cuisine</a></li>
+                <li class="nav-item mb-2"><a href="./reservation.html">Reservation</a></li>
+                <li class="nav-item mb-2"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </aside>
+        <aside class="col-xl-4 col-md-6 text-muted">
+            <strong>External Links</strong>
+            <ul class="nav flex-column mt-0">
+                <li class="nav-item mb-2"><a target="_blank" href="https://m.facebook.com">Facebook</a></li>
+                <li class="nav-item mb-2"><a target="_blank"
+                        href="https://www.instagram.com/longlegpenguin">Instagram</a></li>
+                <li class="nav-item mb-2"><a target="_blank"
+                        href="https://www.youtube.com/watch?v=dT0MKcaQSSs">YouTube</a></li>
+            </ul>
+        </aside>
+        <address class="col-xl-6 text-muted">
+            <strong>SEA&ME</strong>
+            <p>7th Floor, No.1 building, Yard No.398, Zhongdong Rd, Dongxiaokou Town, Chang
+                Ping District, Beijing</p>
+            <p>Copyright ⓒ 2021. SEAME INC. All Rights Reserved</p>
+        </address>
+    </footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="./css/css-switch.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap');
+
+html {
+    background-color: rgb(157, 41, 51);
+}
+.bg-hh {
+    background-color: rgb(57, 82, 96);
+}
+body {
+    background-image: url('../src/image/backbottom2.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
+/* Modify the background color */
+.navbar-custom {
+    background-color: lightgreen;
+}
+
+/* ** Margins, Paddings, Alignments ** */
+body {
+    margin: 10px;
+    opacity: 0.95;
+    border-radius: 5%;
+}
+body::after {
+    background: url(http://kingofwallpapers.com/background-image-laptop/background-image-laptop-018.jpg);
+    content: "";
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;   
+}
+
+h1 {
+    padding-top: 20px;
+    text-align: left;
+}
+h3 {
+    text-align: left !important;
+}
+article#features, article#features>div {
+    margin: 0 auto;
+}
+
+.card-title, .card-text, li {
+    text-align: left;  /* all text,lists left align */
+}
+
+.backToTop {
+    text-align: right;
+}
+
+#introduction article {
+    padding: 10px;
+    margin-bottom: 6em;
+}
+
+
+/* ** FONT ** */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1em;
+}
+
+address {
+    color: gray;
+    font-style: italic;
+}
+a:visited {
+    color: darkblue;
+}
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+em {
+    color: darkslategray;
+    font-weight: bolder;
+}
+
+/* ** img ** */
+.round-left-bottom {
+    border-bottom-left-radius: 30%;
+}
+.round-right-bottom {
+    border-bottom-right-radius: 30%;
+}
+.card {
+    background-color: rgb(255,255,255,0.5);
+    border: 0;
+    margin: 0 auto;
+}
+video {
+    object-fit: cover;
+}
+
+/* ** RESERVATION ** */
+fieldset {
+	border-radius: 5px;
+	min-width: 450px;
+	background-color: rgb(140, 67, 86, 0.2);
+	margin-bottom: 10px;
+    padding: 10px;
+}
+
+#basics input, .formBlock {
+    margin-bottom: 20px;
+}
+textarea {
+    margin: 10px;
+}
+#addition {
+    width: auto; /* define in textarea is not working */
+}
