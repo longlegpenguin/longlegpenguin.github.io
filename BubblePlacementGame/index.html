@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light Bulb Placement - JBPR3N</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container-lg">
+      <div id="map-selection">
+        <div class="beautify p-2">
+          <h1>Light Bulb Placement</h1>
+          <p>
+            Once upon a time, King Unnamed of Nowhereland was both smiling and
+            crying at the same time. He was smiling because his enormous
+            brand-new palace with many spacious rooms and corridors has just
+            been finished. He is also crying as these rooms need to be
+            illuminated and kept warm, but the ongoing increase of utility costs
+            affect him as well. So now it's time to think about the placement of
+            the palace's light bulbs. We need to place them so that everything
+            is properly lit, but we cannot install any unnecessary bulbs.
+          </p>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-sm beautify p-5 m-2">
+            <h2>Play Game!</h2>
+            <br />
+            <div id="defa-map-select-btns">
+              <button id="easy_map" data-mname="Easy">Easy</button>
+              <br /><br />
+              <button id="advanced_map" data-mname="Advanced">Advanced</button>
+              <br /><br />
+              <button id="extreme_map" data-mname="Extreme">Extreme</button>
+              <br /><br />
+              <button id="resumeBtn" data-mname="Saved">Resume</button>
+              <br /><br />
+            </div>
+            <form id="name-form">
+              <label for="name">Name:</label>
+              <input autocomplete="off" type="text" name="name" id="name" /><br /><br />
+              <button id="submit">New Game</button>
+            </form>
+          </div>
+          <div class="col-sm beautify p-5 m-2">
+            <h2>Previous Records</h2>
+            <table id="prev-records">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Map</th>
+                  <th>Time Used</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div id="game" class="row">
+        <div id="game_map" class="col-sm-7 beautify p-5 m-2"></div>
+        <div id="game_control_panel" class="col-sm-4 beautify p-5 m-2">
+          <h1>Instructions</h1>
+          <ul>
+            <li>Click to place/remove the bulbs</li>
+            <li>
+              Game is success if all tiles are lighted, no two bulbs light each
+              other and black tiles are surrounded by number of bulbs
+              corresponding to the number on it.
+            </li>
+          </ul>
+          <br />
+          <div id="game_control_panel_information">
+            <h1>Score Board</h1>
+            <p>Player:</p>
+            <p>Map Name:</p>
+            <p>Time Elapse:</p>
+            <p id="success-message"></p>
+            <p id="save-message">Successfully Saved!</p>
+          </div>
+          <button id="save">Save</button>
+          <button id="restart">Restart</button>
+          <button id="main_menu">Main Menu</button><br /><br />
+        </div>
+      </div>
+    </main>
+    <script src="functions.js"></script>
+    <script src="data.js"></script>
+    <script src="BulbPlacementGame.js"></script>
+    <script src="panels.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
