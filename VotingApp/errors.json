@@ -1,0 +1,5 @@
+{
+    "POLL_NOT_FOUND": "404 Poll Not Found!",
+    "POLL_EXPIRED": "403 Poll has expired. <br>Voting is no longer possible.",
+    "401": "401 Action is not authorized for current user."
+}

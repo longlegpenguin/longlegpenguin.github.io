@@ -1,0 +1,73 @@
+{
+    "00": {
+        "id": "00",
+        "username": "admin",
+        "email": "",
+        "password": "admin",
+        "isAdmin": true,
+        "votes": {
+            "6": "Guigui"
+        }
+    },
+    "1": {
+        "id": "1",
+        "username": "user3",
+        "email": "email3@email.hu",
+        "password": "user3",
+        "isAdmin": false,
+        "votes": {
+            "3": "Yes",
+            "4": "tomorrow",
+            "6": "Qixingpiaochong"
+        }
+    },
+    "2": {
+        "id": "2",
+        "username": "user2",
+        "email": "email2@email.hu",
+        "password": "user2",
+        "isAdmin": false,
+        "votes": []
+    },
+    "3": {
+        "id": 3,
+        "username": "longlegpenguin",
+        "email": "longlegpenguin@gmail.com",
+        "password": "123456",
+        "isAdmin": false,
+        "votes": {
+            "2": "Chocolate bars"
+        }
+    },
+    "4": {
+        "id": 4,
+        "username": "apple",
+        "email": "aaa@aa.co",
+        "password": "111111",
+        "isAdmin": false,
+        "votes": {
+            "5": "job",
+            "6": "Qiguiren"
+        }
+    },
+    "5": {
+        "id": 5,
+        "username": "u5",
+        "email": "some@som.com",
+        "password": "55555",
+        "isAdmin": false,
+        "votes": {
+            "6": "Baicai"
+        }
+    },
+    "6": {
+        "id": 6,
+        "username": "test",
+        "email": "test@test.com",
+        "password": "test",
+        "isAdmin": false,
+        "votes": {
+            "3": "Yes"
+        }
+    }
+}

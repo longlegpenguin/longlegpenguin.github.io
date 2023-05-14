@@ -1,0 +1,128 @@
+{
+    "1": {
+        "id": "1",
+        "question": "Would you like FREE snacks on the university campus?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "isMultiple": false,
+        "createdAt": "2022-12-04",
+        "deadline": "2022-12-12",
+        "answers": {
+            "Yes": 0,
+            "No": 0
+        },
+        "voted": []
+    },
+    "2": {
+        "id": "2",
+        "question": "What kind of snacks would you like?",
+        "options": [
+            "Potato chips",
+            "Peanuts",
+            "Chocolate bars",
+            "Cookies"
+        ],
+        "isMultiple": true,
+        "createdAt": "2022-12-05",
+        "deadline": "2024-12-13",
+        "answers": {
+            "Potato chips": 0,
+            "Peanuts": 0,
+            "Chocolate bars": 1,
+            "Cookies": 0
+        },
+        "voted": [
+            3
+        ]
+    },
+    "3": {
+        "id": "3",
+        "question": "Are you tired?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "isMultiple": true,
+        "createdAt": "2022-12-06",
+        "deadline": "2025-12-13",
+        "answers": {
+            "Yes": 2,
+            "No": 0
+        },
+        "voted": [
+            "1",
+            6
+        ]
+    },
+    "4": {
+        "id": 4,
+        "question": "When is Christmas?",
+        "options": [
+            "yesterday",
+            "tomorrow",
+            "today",
+            "long passed"
+        ],
+        "isMultiple": false,
+        "createdAt": "2022-12-23",
+        "deadline": "2022-12-31",
+        "answers": {
+            "yesterday": 0,
+            "tomorrow": 1,
+            "today": 0,
+            "long passed": 0
+        },
+        "voted": [
+            "1"
+        ]
+    },
+    "5": {
+        "id": 5,
+        "question": "Job or master?",
+        "options": [
+            "job",
+            "master"
+        ],
+        "isMultiple": false,
+        "createdAt": "2022-12-23",
+        "deadline": "2022-12-24",
+        "answers": {
+            "job": 1,
+            "master": 0
+        },
+        "voted": [
+            4
+        ]
+    },
+    "6": {
+        "id": 6,
+        "question": "Which is a better name for my turtle?",
+        "options": [
+            "Qiguiren",
+            "Guigui",
+            "Baicai",
+            "Laji",
+            "Qixingpiaochong",
+            "Dabian"
+        ],
+        "isMultiple": false,
+        "createdAt": "2022-12-24",
+        "deadline": "2022-12-25",
+        "answers": {
+            "Qiguiren": 1,
+            "Guigui": 1,
+            "Baicai": 1,
+            "Laji": 0,
+            "Qixingpiaochong": 1,
+            "Dabian": 0
+        },
+        "voted": [
+            "0",
+            4,
+            5,
+            "1"
+        ]
+    }
+}
