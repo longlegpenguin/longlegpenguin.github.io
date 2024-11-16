@@ -1,14 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - longlegpenguin
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - longlegpenguin/longlegpenguin.github.io
+  - longlegpenguin/ELTE-Functional-Programming-2024-Autumn
+  - longlegpenguin/parcel-collection-app
+  - longlegpenguin/Thesis
